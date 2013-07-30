@@ -1,5 +1,12 @@
 # Jekyll
 
+## Jekyll for JRuby
+
+What it says on the tin.
+A fork of Jekyll, removing native dependencies (fast-stemmer!) and trying to change as little as possible.
+
+
+
 [![Build Status](https://secure.travis-ci.org/mojombo/jekyll.png)](https://travis-ci.org/mojombo/jekyll)
 [![Code Climate](https://codeclimate.com/github/mojombo/jekyll.png)](https://codeclimate.com/github/mojombo/jekyll)
 
