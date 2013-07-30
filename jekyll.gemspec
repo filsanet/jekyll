@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.rubygems_version = '1.3.5'
 
-  s.name              = 'jekyll'
+  s.name              = 'jekyll-jruby'
   s.version           = '1.1.2'
   s.license           = 'MIT'
   s.date              = '2013-07-25'
@@ -12,9 +12,9 @@ Gem::Specification.new do |s|
   s.summary     = "A simple, blog aware, static site generator."
   s.description = "Jekyll is a simple, blog aware, static site generator."
 
-  s.authors  = ["Tom Preston-Werner"]
-  s.email    = 'tom@mojombo.com'
-  s.homepage = 'http://github.com/mojombo/jekyll'
+  s.authors  = ["Tom Preston-Werner", "Philip Suh"]
+  s.email    = 'phil@filsa.net'
+  s.homepage = 'http://github.com/filsanet/jekyll-jruby'
 
   s.require_paths = %w[lib]
 
@@ -24,15 +24,15 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = %w[README.markdown LICENSE]
 
   s.add_runtime_dependency('liquid', "~> 2.5.1")
-  s.add_runtime_dependency('classifier', "~> 1.3")
+  #s.add_runtime_dependency('classifier', "~> 1.3")
   s.add_runtime_dependency('directory_watcher', "~> 1.4.1")
   s.add_runtime_dependency('maruku', "~> 0.5")
   s.add_runtime_dependency('kramdown', "~> 1.0.2")
-  s.add_runtime_dependency('pygments.rb', "~> 0.5.0")
+  #s.add_runtime_dependency('pygments.rb', "~> 0.5.0")
   s.add_runtime_dependency('commander', "~> 4.1.3")
   s.add_runtime_dependency('safe_yaml', "~> 0.7.0")
   s.add_runtime_dependency('colorator', "~> 0.1")
-  s.add_runtime_dependency('redcarpet', "~> 2.2.2")
+  #s.add_runtime_dependency('redcarpet', "~> 2.2.2")
 
   s.add_development_dependency('rake', "~> 10.0.3")
   s.add_development_dependency('rdoc', "~> 3.11")
@@ -41,7 +41,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency('rr', "~> 1.0.0")
   s.add_development_dependency('cucumber', "~> 1.2.1", '!= 1.2.4')
   s.add_development_dependency('RedCloth', "~> 4.2")
-  s.add_development_dependency('rdiscount', "~> 1.6")
+  #s.add_development_dependency('rdiscount', "~> 1.6")
   s.add_development_dependency('launchy', "~> 2.1.2")
   s.add_development_dependency('simplecov', "~> 0.7")
   s.add_development_dependency('simplecov-gem-adapter', "~> 1.0.1")
