@@ -3,10 +3,10 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.rubygems_version = '1.3.5'
 
-  s.name              = 'jekyll-jruby'
+  s.name              = 'jekyll'
   s.version           = '1.1.2'
   s.license           = 'MIT'
-  s.date              = '2013-07-25'
+  s.date              = '2013-08-02'
   s.rubyforge_project = 'jekyll'
 
   s.summary     = "A simple, blog aware, static site generator."
@@ -48,6 +48,7 @@ Gem::Specification.new do |s|
     CONTRIBUTING.markdown
     Gemfile
     History.markdown
+    JRUBY.md
     LICENSE
     README.markdown
     Rakefile
@@ -79,8 +80,6 @@ Gem::Specification.new do |s|
     lib/jekyll/converters/markdown.rb
     lib/jekyll/converters/markdown/kramdown_parser.rb
     lib/jekyll/converters/markdown/maruku_parser.rb
-    lib/jekyll/converters/markdown/rdiscount_parser.rb
-    lib/jekyll/converters/markdown/redcarpet_parser.rb
     lib/jekyll/converters/textile.rb
     lib/jekyll/convertible.rb
     lib/jekyll/core_ext.rb
@@ -257,8 +256,6 @@ Gem::Specification.new do |s|
     test/test_page.rb
     test/test_pager.rb
     test/test_post.rb
-    test/test_rdiscount.rb
-    test/test_redcarpet.rb
     test/test_redcloth.rb
     test/test_related_posts.rb
     test/test_site.rb

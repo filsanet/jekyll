@@ -19,8 +19,8 @@ module Jekyll
       self.source          = File.expand_path(config['source'])
       self.dest            = File.expand_path(config['destination'])
       self.plugins         = plugins_path
-      self.lsi             = config['lsi']
-      self.pygments        = config['pygments']
+      self.lsi             = false   # config['lsi']
+      self.pygments        = false   # config['pygments']
       self.baseurl         = config['baseurl']
       self.permalink_style = config['permalink'].to_sym
       self.exclude         = config['exclude']
