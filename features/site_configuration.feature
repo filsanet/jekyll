@@ -41,13 +41,6 @@ Feature: Site configuration
     And the "_site/Rakefile" file should not exist
     And the "_site/README" file should not exist
 
-#  Scenario: Use RDiscount for markup
-#    Given I have an "index.markdown" page that contains "[Google](http://google.com)"
-#    And I have a configuration file with "markdown" set to "rdiscount"
-#    When I run jekyll
-#    Then the _site directory should exist
-#    And I should see "<a href="http://google.com">Google</a>" in "_site/index.html"
-
   Scenario: Use Kramdown for markup
     Given I have an "index.markdown" page that contains "[Google](http://google.com)"
     And I have a configuration file with "markdown" set to "kramdown"
@@ -55,26 +48,12 @@ Feature: Site configuration
     Then the _site directory should exist
     And I should see "<a href="http://google.com">Google</a>" in "_site/index.html"
 
-#  Scenario: Use Redcarpet for markup
-#    Given I have an "index.markdown" page that contains "[Google](http://google.com)"
-#    And I have a configuration file with "markdown" set to "redcarpet"
-#    When I run jekyll
-#    Then the _site directory should exist
-#    And I should see "<a href="http://google.com">Google</a>" in "_site/index.html"
-
   Scenario: Use Maruku for markup
     Given I have an "index.markdown" page that contains "[Google](http://google.com)"
     And I have a configuration file with "markdown" set to "maruku"
     When I run jekyll
     Then the _site directory should exist
     And I should see "<a href='http://google.com'>Google</a>" in "_site/index.html"
-
-#  Scenario: Highlight code with pygments
-#    Given I have an "index.html" file that contains "{% highlight ruby %} puts 'Hello world!' {% endhighlight %}"
-#    And I have a configuration file with "pygments" set to "true"
-#    When I run jekyll
-#    Then the _site directory should exist
-#    And I should see "puts 'Hello world!'" in "_site/index.html"
 
   Scenario: Set time and no future dated posts
     Given I have a _layouts directory
