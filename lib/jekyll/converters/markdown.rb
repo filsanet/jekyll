@@ -9,17 +9,13 @@ module Jekyll
       def setup
         return if @setup
         @parser = case @config['markdown']
-          when 'redcarpet'
-            RedcarpetParser.new @config
           when 'kramdown'
             KramdownParser.new @config
-          when 'rdiscount'
-            RDiscountParser.new @config
           when 'maruku'
             MarukuParser.new @config
           else
             STDERR.puts "Invalid Markdown processor: #{@config['markdown']}"
-            STDERR.puts "  Valid options are [ maruku | rdiscount | kramdown | redcarpet ]"
+            STDERR.puts "  Valid options are [ maruku | kramdown ]"
             raise FatalException.new("Invalid Markdown process: #{@config['markdown']}")
         end
         @setup = true

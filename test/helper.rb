@@ -12,9 +12,7 @@ gem 'RedCloth', '>= 4.2.1'
 require 'jekyll'
 
 require 'RedCloth'
-require 'rdiscount'
 require 'kramdown'
-require 'redcarpet'
 
 require 'redgreen' if RUBY_VERSION < '1.9'
 require 'shoulda'

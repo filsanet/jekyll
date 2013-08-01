@@ -149,17 +149,6 @@ CONTENT
       end
     end
 
-    context "using RDiscount" do
-      setup do
-        create_post(@content, 'markdown' => 'rdiscount')
-      end
-
-      should "parse correctly" do
-        assert_match %r{<em>FIGHT!</em>}, @result
-        assert_match %r{<em>FINISH HIM</em>}, @result
-      end
-    end
-
     context "using Kramdown" do
       setup do
         create_post(@content, 'markdown' => 'kramdown')
@@ -171,16 +160,6 @@ CONTENT
       end
     end
 
-    context "using Redcarpet" do
-      setup do
-        create_post(@content, 'markdown' => 'redcarpet')
-      end
-
-      should "parse correctly" do
-        assert_match %r{<em>FIGHT!</em>}, @result
-        assert_match %r{<em>FINISH HIM</em>}, @result
-      end
-    end
   end
 
   context "simple page with post linking" do
